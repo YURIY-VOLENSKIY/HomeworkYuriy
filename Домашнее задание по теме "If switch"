@@ -8,3 +8,24 @@ public class Main {
         }
        }
     }
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        int day = 31;
+        if (day < 1 || day > 31) {
+            System.out.println("Нет такого числа в месяце");
+        } else {
+            if (day <= 10) {
+                System.out.println("Первая декада");
+            } else {
+                if (day > 20) {
+                    System.out.println("Третья декада");
+                } else {
+                    System.out.println("Вторая декада");
+                }
+            }
+        }
+    }
+}
